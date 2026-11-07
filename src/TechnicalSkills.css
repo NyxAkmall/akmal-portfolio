@@ -1,0 +1,164 @@
+/* AKMAL.DEV - TECHNICAL SKILLS */
+
+.technical-skills {
+  padding-top: 25px;
+  padding-bottom: 110px;
+}
+
+.technical-skills-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.technical-skills-heading h2 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: clamp(27px, 3vw, 35px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.technical-skills-heading p {
+  max-width: 255px;
+  color: #a8bfd9;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: right;
+}
+
+.technical-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.technical-skill-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 125px;
+  padding: 20px 10px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #101f32, #091525);
+  border: 1px solid rgba(100, 160, 210, 0.2);
+  border-radius: 16px;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.technical-skill-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(7, 140, 255, 0.13),
+    transparent 75%
+  );
+  transition: opacity 0.3s ease;
+}
+
+.technical-skill-card:hover {
+  border-color: rgba(56, 182, 255, 0.7);
+  box-shadow:
+    0 12px 35px rgba(0, 140, 255, 0.12),
+    inset 0 0 20px rgba(0, 140, 255, 0.04);
+}
+
+.technical-skill-card:hover::before {
+  opacity: 1;
+}
+
+.technical-skill-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--skill-color);
+  font-size: 39px;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.technical-skill-card:hover .technical-skill-icon {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 12px var(--skill-color));
+}
+
+.technical-skill-name {
+  position: relative;
+  z-index: 1;
+  color: #f8fafc;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .technical-skills-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .technical-skills {
+    padding-top: 10px;
+    padding-bottom: 80px;
+  }
+
+  .technical-skills-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .technical-skills-heading p {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .technical-skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .technical-skill-card {
+    min-height: 110px;
+    padding: 15px 7px;
+    border-radius: 12px;
+  }
+
+  .technical-skill-icon {
+    font-size: 32px;
+  }
+
+  .technical-skill-name {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 420px) {
+  .technical-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .technical-skill-card,
+  .technical-skill-icon,
+  .technical-skill-card::before {
+    transition: none;
+  }
+}

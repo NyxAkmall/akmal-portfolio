@@ -1,0 +1,262 @@
+/* ========================================
+   AKMAL.DEV - WORK EXPERIENCE
+   ======================================== */
+
+.work-experience {
+  padding-top: 30px;
+  padding-bottom: 110px;
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.experience-header h2 {
+  margin: 12px 0;
+  color: #f8fafc;
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.experience-header p {
+  max-width: 490px;
+  margin: 0 auto;
+  color: #9db4ce;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.experience-timeline {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.experience-timeline-item {
+  display: flex;
+  align-items: stretch;
+  gap: 23px;
+}
+
+.experience-timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.experience-dot {
+  width: 16px;
+  height: 16px;
+  border: 4px solid #38b6ff;
+  border-radius: 50%;
+  background: #091626;
+  box-shadow: 0 0 20px rgba(56, 182, 255, 0.45);
+}
+
+.experience-line {
+  flex: 1;
+  width: 2px;
+  min-height: 50px;
+  margin-top: 8px;
+  background: linear-gradient(
+    #38b6ff,
+    rgba(56, 182, 255, 0.04)
+  );
+}
+
+.experience-card {
+  flex: 1;
+  min-width: 0;
+  padding: 32px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(90, 150, 210, 0.2);
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    #102238,
+    #0a1728
+  );
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 182, 255, 0.55);
+  box-shadow: 0 16px 40px rgba(0, 140, 255, 0.1);
+}
+
+.experience-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.experience-company-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(56, 182, 255, 0.3);
+  border-radius: 14px;
+  background: rgba(56, 182, 255, 0.1);
+  color: #38b6ff;
+}
+
+.experience-period {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border: 1px solid rgba(56, 182, 255, 0.2);
+  border-radius: 20px;
+  background: rgba(56, 182, 255, 0.06);
+  color: #9edaff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.experience-type {
+  color: #38b6ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.experience-card h3 {
+  margin: 10px 0 5px;
+  color: #f8fafc;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+}
+
+.experience-card h4 {
+  margin: 0 0 17px;
+  color: #b9d5ee;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.experience-description {
+  margin: 0 0 23px;
+  color: #a8bfd9;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.experience-responsibilities {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 27px;
+}
+
+.experience-responsibility {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: #c3d4e7;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.experience-responsibility svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #38b6ff;
+}
+
+.experience-tech-footer {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.experience-tech-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: #9db4ce;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.experience-tech-title svg {
+  color: #38b6ff;
+}
+
+.experience-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.experience-tech-list span {
+  padding: 7px 12px;
+  border: 1px solid rgba(56, 182, 255, 0.15);
+  border-radius: 20px;
+  background: rgba(56, 182, 255, 0.07);
+  color: #a9d9ff;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .work-experience {
+    padding-top: 15px;
+    padding-bottom: 80px;
+  }
+
+  .experience-header {
+    margin-bottom: 30px;
+  }
+
+  .experience-timeline-item {
+    gap: 12px;
+  }
+
+  .experience-timeline-marker {
+    width: 14px;
+  }
+
+  .experience-dot {
+    width: 13px;
+    height: 13px;
+    border-width: 3px;
+  }
+
+  .experience-card {
+    padding: 22px 18px;
+    border-radius: 15px;
+  }
+
+  .experience-card h3 {
+    font-size: 19px;
+  }
+
+  .experience-card-top {
+    align-items: flex-start;
+  }
+
+  .experience-period {
+    font-size: 10px;
+    padding: 7px 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-card {
+    transition: none;
+  }
+}
